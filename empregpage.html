@@ -1,0 +1,133 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="CSS/empregpage.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <title>Fifo employee registration page</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="containermain">
+            <input type="checkbox" name="" id="check">
+            <div class="logo-container">
+                <h5 class="logo">FIFO Solutions</h5>
+            </div>
+            <div class="nav-btn">
+                <div class="nav-links">
+                    <ul>
+                        <li class="nav-link" style="--i: .6s"><a class="active" href="homepage1.html">Home</a></li>
+
+                        <li class="nav-link" style="--i: 0.85s"><a href="services.html">Services<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown">
+                                <ul>
+
+                                    <li class="dropdown-link"><a href="staffing.html">IT staffing & consulting</a></li>
+                                    <li class="dropdown-link"><a href="training.html">Training<i class="fas fa-caret-down"></i></a>
+                                        <div class="dropdown second">
+                                            <ul>
+                                              <li class="dropdown-link"><a href="trainingreg.html">Register</a></li>
+
+                                              <li class="dropdown-link"><a href="traininglogin.html">Login</a></li>
+                                              <div class="arrow"></div>
+
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <div class="arrow"></div>
+                                </ul>
+                            </div>
+                        </li>
+                        <div class="arrow"></div>
+                        <li class="nav-link" style="--i: 1.1s"><a href="clients.html">Clients</a></li>
+                        <li class="nav-link" style="--i: 1.35s"><a href="jobseeker.html">Job seekers<i class="fas fa-caret-down"></i></a>
+                            <div class="dropdown">
+                                <ul>
+
+                                    <li class="dropdown-link"><a href="jobseekerreg.html">Register</a></li>
+
+                                    <li class="dropdown-link"><a href="jobseekerlogin.html">Login</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <div class="arrow"></div>
+                        <li class="nav-link" style="--i: 1.6s"><a href="careers.html">Careers</a></li>
+                        <li class="nav-link" style="--i: 1.85s"><a href="aboutus.html">About us</a></li>
+
+                        <li class="nav-link" style="--i: 2.1s"><a href="contactus.html">Contact us<i class="fas fa-caret-down"></i></a>
+                          <div class="dropdown">
+                              <ul>
+
+                                  <li class="dropdown-link"><a href="#login.html">Address</a></li>
+
+                                  <li class="dropdown-link"><a href="#register.html">Working hours</a></li>
+                                  <li class="dropdown-link"><a href="#register.html">Email</a></li>
+                                  <li class="dropdown-link"><a href="#register.html">Number</a></li>
+                              </ul>
+                          </div>
+                        </li>
+                         <a href="emploginpage.html" class="emp"> Employee Login</a>
+
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <div class="hamburger-menu-container">
+                <div class="hamburger-menu">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+      <div class="wrapper">
+        <h2>Employee Signup</h2>
+        <div id="error_message"></div>
+        <form id="myform" action="success.html" method="post" onsubmit="return validate()">
+          <div class="input_field">
+      			  <label for="">First name</label>
+              <input type="text" placeholder="Enter First name" id="name">
+          </div>
+      		<div class="input_field">
+      			   <label for="">Last name</label>
+      				<input type="text" placeholder="Enter Last name" id="lname">
+      		</div>
+          <div class="input_field">
+      			   <label for="">Phone number</label>
+              <input type="text" placeholder="Enter Phone number" id="phone">
+          </div>
+          <div class="input_field">
+      			  <label for="">Email</label>
+              <input type="text" placeholder="Enter Email" id="email">
+          </div>
+      		<div class="input_field">
+      			  <label for="">Password</label>
+              <input type="text" placeholder="Enter Password" id="pass">
+          </div>
+      		<div class="input_field">
+      			  <label for="">Confirm password</label>
+              <input type="text" placeholder="Confirm password" id="cpass">
+          </div>
+
+          <div class="btn">
+              <input type="submit">
+          </div>
+        </form>
+      </div>
+     	<script src="js/empregpage.js"></script>
+    </section>
+
+</body>
+
+</html>
